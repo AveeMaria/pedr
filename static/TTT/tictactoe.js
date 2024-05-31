@@ -17,10 +17,9 @@ tiles.forEach(row => {
 });
 console.log("\n");*/
 
-const title = document.getElementById('naslov');
-
+const header = document.getElementById('header');
 // k kliknes na title neki nardi (fake gumb??)
-title.addEventListener('click', RestartGame);
+header.addEventListener('click', RestartGame);
 
 function RestartGame() {
 	player = true;//torej to potezo ma player
