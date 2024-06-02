@@ -45,14 +45,16 @@ footer {
 
 
 a {
-    color: #fffdcd;
     color: aquamarine;
 }
 
-    a:hover {
-        color: #FDF100;
-        color: aqua;
-    }
+#source {
+    color: papayawhip;
+}
+
+a:hover {
+    color: aqua;
+}
 
 hr {
     display: block;
