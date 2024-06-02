@@ -13,9 +13,11 @@ let tiles = [
 /*
 //izpis arraya
 tiles.forEach(row => {
-	console.log(row.join(' '));
+	//console.log(row.join(' '));
 });
-console.log("\n");*/
+//console.log("\n");*/
+
+/console.log("A resno to beres?\n");
 
 const header = document.getElementById('header');
 // k kliknes na title neki nardi (fake gumb??)
@@ -34,7 +36,7 @@ function RestartGame() {
 		[0, 0, 0]
 	];
 	
-	console.clear();
+	//console.clear();
 	updateImages();
 	ResetGraphics();
 	document.getElementById('match_result').innerHTML = "";
@@ -104,7 +106,7 @@ function DisplayMatchResult() {
 		document.getElementById('match_result').innerHTML = "Enemy wins!";
 	}
 	else if (draw) {
-		paragraph.style.color = 'black';
+		paragraph.style.color = 'dimgray';
 		document.getElementById('match_result').innerHTML = "Draw!";
 	}
 }
@@ -129,7 +131,7 @@ function rowCheck() {
 		if(tiles[i][0] == 1 && tiles[i][1] == 1 && tiles[i][2] == 1) {
 			draw = false;
 			playerWins = true;
-			console.log("player wins\nrows\n");
+			//console.log("player wins\nrows\n");
 			DisplayWin(i,0,i,1,i,2,true);
 			return;
 		}
@@ -137,7 +139,7 @@ function rowCheck() {
 		else if(tiles[i][0] == 2 && tiles[i][1] == 2 && tiles[i][2] == 2) {
 			draw = false;
 			computerWins = true;
-			console.log("computer wins\nrows\n");
+			//console.log("computer wins\nrows\n");
 			DisplayWin(i,0,i,1,i,2,false);
 			
 			return;
@@ -152,7 +154,7 @@ function columnCheck() {
 		if(tiles[0][j] == 1 && tiles[1][j] == 1 && tiles[2][j] == 1) {
 			draw = false;
 			playerWins = true;
-			console.log("player wins\ncolumns\n");
+			//console.log("player wins\ncolumns\n");
 			DisplayWin(0,j,1,j,2,j,true);
 			return;
 		}
@@ -160,7 +162,7 @@ function columnCheck() {
 		else if(tiles[0][j] == 2 && tiles[1][j] == 2 && tiles[2][j] == 2) {
 			draw = false;
 			computerWins = true;
-			console.log("computer wins\ncolumns\n");
+			//console.log("computer wins\ncolumns\n");
 			DisplayWin(0,j,1,j,2,j,false);
 			return;
 		}
@@ -173,14 +175,14 @@ function diagonalCheck() {
 	if(tiles[0][0] == 1 && tiles[1][1] == 1 && tiles[2][2] == 1) {
 		draw = false;
 		playerWins = true;
-		console.log("player wins\nleft diagonal\n");
+		//console.log("player wins\nleft diagonal\n");
 		DisplayWin(0,0,1,1,2,2,true);
 	}
 	//computer wins
 	else if(tiles[0][0] == 2 && tiles[1][1] == 2 && tiles[2][2] == 2) {
 		draw = false;
 		computerWins = true;
-		console.log("computer wins\nleft diagonal\n");
+		//console.log("computer wins\nleft diagonal\n");
 		DisplayWin(0,0,1,1,2,2,false);
 	}
 
@@ -189,14 +191,14 @@ function diagonalCheck() {
 	if(tiles[0][2] == 1 && tiles[1][1] == 1 && tiles[2][0] == 1) {
 		draw = false;
 		playerWins = true;
-		console.log("player wins\nright diagonal\n");
+		//console.log("player wins\nright diagonal\n");
 		DisplayWin(0,2,1,1,2,0,true);
 	}
 	//computer wins
 	else if(tiles[0][2] == 2 && tiles[1][1] == 2 && tiles[2][0] == 2) {
 		draw = false;
 		computerWins = true;
-		console.log("computer wins\nright diagonal\n");
+		//console.log("computer wins\nright diagonal\n");
 		DisplayWin(0,2,1,1,2,0,false);
 	}
 }
@@ -244,7 +246,7 @@ function updateImages() {
 
 //sprejme 3 pare kjer se poveze, in bool player
 function DisplayWin(i1,j1,i2,j2,i3,j3,Player) {
-	console.log("ring ring");
+	//console.log("ring ring");
 	let t1 = document.getElementById(('tile' + i1) + j1);
 	let t2 = document.getElementById(('tile' + i2) + j2);
 	let t3 = document.getElementById(('tile' + i3) + j3);
