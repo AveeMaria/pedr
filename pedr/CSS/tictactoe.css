@@ -1,14 +1,3 @@
-/*
-THEME: 
-    (naslov)border bela: #FEFEFE
-    naslov rdeca: #EF4428
-    podnaslov pinky: #E572AD
-    bombon rumena: #E6D6A3/#F7F274
-    bombon pinky: #E2AFC0
-    ovitk rumena: #FDF100
-    ovitek pinky: #EAA4C8
-*/
-
 html {
     background-color: #EAA4C8;
     color: #F7F274;
@@ -24,38 +13,51 @@ body {
 }
 
 header {
-    color: #EF4428;
     margin: 2px;
+    color: #F7F274;
 }
 
 header h1 {
     color: #EF4428;
     -webkit-text-stroke: 1px #FEFEFE;
-} 
+}
 
 footer {
     margin-top: 10px;
-    
 }
 
-#source {
-    color: antiquewhite;
+.field {
+    width: 100px;
+    height: 100px;
+    color: #F7F274;
+    background-color: #EF4428;
+    background-image: url('../assets/default.png');
+    background-size: cover;
+    cursor: pointer;
+    margin: 2px;
+    margin-top: 6px;
 }
+
 
 a {
     color: #fffdcd;
     color: aquamarine;
-    
 }
 
-a:hover {
-    color: #FDF100;
-    color: aqua;
-}
+    a:hover {
+        color: #FDF100;
+        color: aqua;
+    }
 
 hr {
     display: block;
     margin: 20px auto;
     border: none;
     border-top: 1px solid #FEFEFE;
+}
+
+
+/*za prvic k hoveras cez dela*/
+.field:hover {
+    background-image: url('../assets/selected.png');
 }
