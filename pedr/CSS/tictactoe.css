@@ -20,6 +20,11 @@ header {
 header h1 {
     color: #EF4428;
     -webkit-text-stroke: 1px #FEFEFE;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 5px;
 }
 
 footer {
