@@ -17,7 +17,7 @@ tiles.forEach(row => {
 });
 //console.log("\n");*/
 
-/console.log("A resno to beres?\n");
+console.log("A resno to beres?\n");
 
 const header = document.getElementById('header');
 // k kliknes na title neki nardi (fake gumb??)
