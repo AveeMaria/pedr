@@ -64,6 +64,10 @@ hr {
     border-top: 1px solid antiquewhite;
 }
 
+button {
+	background-color:#EAA4C8;
+}
+
 /*za prvic k hoveras cez dela*/
 .field:hover {
     background-image: url('../assets/selected.png');
