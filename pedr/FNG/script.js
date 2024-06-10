@@ -1,6 +1,6 @@
 const words = {
     nouns: ["cornstar", "monarch", "OF creator", "V-tuber", "politician", "actor", "singer", "president", "serial killer", "hentai artist", "shaolin master", "rabbie", "minecraft streamer", "islamic extremist", "rebel", "terrorist", "violinist", "health expert"],
-    names: ["Joe Biden", "Drake", "Donnald Trump", "Elon Musk", "JoJo Siwa", "Baby Gronk", "Kai Cenat", "Zuck", "Livvy Dunne", "Putin", "Xi Jin Ping", "Christino Ronaldo", "Michael Obama", "Taylor Swift", "John Cena", "James Charles"],
+    names: ["Joe Biden", "Drake", "Donnald Trump", "Elon Musk", "JoJo Siwa", "Baby Gronk", "Kai Cenat", "Mark Zuck", "Livvy Dunne", "Putin", "Xi Jin Ping", "Christino Ronaldo", "Michael Obama", "Taylor Swift", "John Cena", "James Charles"],
     verbs: ["destroyes", "challenges", "kissed", "cuddled with", "defeats", "embarrasses", "outclasses", "overshadows","endorses", "outshines", "empowers", "brutally mogs", "rizzes up", "fanum-taxes", "excels", "anihalates","devastates"],
     activities: ["dance-battle", "singing contest", "rap battle","cheese rolling contest", "fishing standoff", "race walking","extreme ironing battle","russian roulete duel", "do nothing torunament", "boxing match", "a badminton tournament", "a tic tac toe duel", "chess tournament", "cooking competition", "a Fortnite duel", "a bowling duel"],
     places: ["at a charity event", "in a viral video", "during a live broadcast", "during Thanksgiving dinner","at Oscars", "at a private party", "in a private mansion","on a private island","at a disclosed location", "during national landlord appreciation day", "during superbowl half-time"],
@@ -8,7 +8,7 @@ const words = {
     quantifiers: ["Many", "Few", "All", "Some", "Most", "A number of", "Numerous"],
     eventAlternatives: ["event", "incident", "happening", "occurrence", "spectacle", "phenomenon"],
     attentionPhrases: ["drawing attention from all over the world", "forever changing the course of history", "captivating the audience globally", "creating a stir across the globe", "gathering worldwide interest"],
-    groupTerms: ["fans", "visitors", "bystanders", "spectators", "sigmas", "rizzlers", "gamers", "people", "witnesses"],
+    groupTerms: ["fans", "visitors", "husslers", "bystanders", "spectators", "sigmas", "rizzlers", "gamers", "people", "witnesses"],
     performanceAdjectives: ["exceptionally well", "great", "terrible"],
     reactionAdjectives: ["in awe", "excited", "bored", "shocked", "aroused", "horny"],
     sentenceStarters: ["This shocking", "This devastating", "This wholesome", "This unbelievable", "This amazing", "This unexpected", "This surprising"],

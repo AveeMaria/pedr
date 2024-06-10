@@ -23,24 +23,7 @@ const header = document.getElementById('header');
 // k kliknes na title neki nardi (fake gumb??)
 header.addEventListener('click', RestartGame);
 
-function RestartGame() {
-	player = true;//torej to potezo ma player
-	totalTurns = 0;
-	playerWins = false;
-	computerWins = false;
-	draw = true;
-	
-	tiles = [
-		[0, 0, 0],
-		[0, 0, 0],
-		[0, 0, 0]
-	];
-	
-	//console.clear();
-	updateImages();
-	ResetGraphics();
-	document.getElementById('match_result').innerHTML = "";
-}
+
 
 function PlayerSelectTile(i,j) {
 	if(totalTurns>=9) {
@@ -215,29 +198,29 @@ function updateImages() {
 			
 			//ce je player da O
 			if (tiles[i][j] == 1) {
-				button.style.backgroundImage = "url('assets/o.png')";
+				button.style.backgroundImage = "url('TTT/assets/o.png')";
 			}
 			
 			//enemy da X
 			else if(tiles[i][j] == 2) {
-				button.style.backgroundImage = "url('assets/x.png')";
+				button.style.backgroundImage = "url('TTT/assets/x.png')";
 			}
 			
 			else if(draw){
-				button.style.backgroundImage = "url('assets/default.png')";
+				button.style.backgroundImage = "url('TTT/assets/default.png')";
 			}
             
             //highlights button when mouse is over
             button.addEventListener('mouseenter', function() {
 			if (tiles[i][j] === 0) {
-                    button.style.backgroundImage = "url('assets/selected.png')";
+                    button.style.backgroundImage = "url('TTT/assets/selected.png')";
                 }
             });
             
             //returns to default when mouse is not over anymore
             button.addEventListener('mouseleave', function() {
                 if (tiles[i][j] === 0) {
-                    button.style.backgroundImage = "url('assets/default.png')";
+                    button.style.backgroundImage = "url('TTT/assets/default.png')";
                 }
             });
         }
@@ -252,14 +235,14 @@ function DisplayWin(i1,j1,i2,j2,i3,j3,Player) {
 	let t3 = document.getElementById(('tile' + i3) + j3);
 
 	if(Player) {
-		t1.style.backgroundImage = "url('assets/o-win.png')";
-		t2.style.backgroundImage = "url('assets/o-win.png')";
-		t3.style.backgroundImage = "url('assets/o-win.png')";
+		t1.style.backgroundImage = "url('TTT/assets/o-win.png')";
+		t2.style.backgroundImage = "url('TTT/assets/o-win.png')";
+		t3.style.backgroundImage = "url('TTT/assets/o-win.png')";
 	}
 	else {
-		t1.style.backgroundImage = "url('assets/x-win.png')";
-		t2.style.backgroundImage = "url('assets/x-win.png')";
-		t3.style.backgroundImage = "url('assets/x-win.png')";
+		t1.style.backgroundImage = "url('TTT/assets/x-win.png')";
+		t2.style.backgroundImage = "url('TTT/assets/x-win.png')";
+		t3.style.backgroundImage = "url('TTT/assets/x-win.png')";
 	}
 }
 
@@ -267,7 +250,28 @@ function ResetGraphics() {
 	for (let i = 0; i < 3; ++i) {
 		for (let j = 0; j < 3; ++j) {
 			let button = document.getElementById(('tile' + i) + j);
-			button.style.backgroundImage = "url('assets/default.png')";
+			button.style.backgroundImage = "url('TTT/assets/default.png')";
 		}
 	}
 }
+
+function RestartGame() {
+	player = true;//torej to potezo ma player
+	totalTurns = 0;
+	playerWins = false;
+	computerWins = false;
+	draw = true;
+	
+	tiles = [
+		[0, 0, 0],
+		[0, 0, 0],
+		[0, 0, 0]
+	];
+	
+	//console.clear();
+	updateImages();
+	ResetGraphics();
+	document.getElementById('match_result').innerHTML = "";
+}
+
+updateImages();

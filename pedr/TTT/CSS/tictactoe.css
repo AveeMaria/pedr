@@ -36,7 +36,7 @@ footer {
     height: 100px;
     color: #F7F274;
     background-color: #EF4428;
-    background-image: url('../assets/default.png');
+    background-image: url('TTT/assets/default.png');
     background-size: cover;
     cursor: pointer;
     margin: 2px;
@@ -66,9 +66,10 @@ hr {
 
 button {
 	background-color:#EAA4C8;
+	background-image: url('TTT/assets/default.png');
 }
 
 /*za prvic k hoveras cez dela*/
 .field:hover {
-    background-image: url('../assets/selected.png');
+    background-image: url('TTT/assets/selected.png');
 }
