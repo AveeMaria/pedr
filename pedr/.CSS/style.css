@@ -12,13 +12,13 @@ THEME:
 html {
     background-color: #EAA4C8;
     color: #F7F274;
-    text-align: center;
+    text-align: left;
 }
 
 body {
     max-width: 960px;
     margin: 100px auto;
-    text-align: center;
+    text-align: left;
     border: 1px solid #FEFEFE;
     padding: 1px;
 }
@@ -26,26 +26,29 @@ body {
 header {
     color: #EF4428;
     margin: 2px;
+    text-align: center; /* Center align the header text */
 }
 
 header h1 {
     color: #EF4428;
     -webkit-text-stroke: 1px #FEFEFE;
-} 
+    text-align: center; /* Center align the main title */
+}
 
 footer {
     margin-top: 10px;
-    
+    text-align: left;
 }
 
 #source {
     color: antiquewhite;
+    text-align: center; /* Center align the source link */
+    display: block;
 }
 
 a {
     color: #fffdcd;
     color: aquamarine;
-    
 }
 
 a:hover {
@@ -59,4 +62,8 @@ hr {
     border: none;
     border-top: 1px solid #FEFEFE;
     border-top: 1px solid antiquewhite;
+}
+
+h2 {
+    margin-left: 10px;
 }
