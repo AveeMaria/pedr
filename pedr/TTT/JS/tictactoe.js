@@ -99,15 +99,15 @@ function DisplayMatchResult() {
 	
 	if (playerWins) {
 		paragraph.style.color = 'green';
-		document.getElementById('match_result').innerHTML = "Player wins!";
+		document.getElementById('match_result').innerHTML = "Igralec zmaga!";
 	}
 	else if (computerWins) {
 		paragraph.style.color = 'red';
-		document.getElementById('match_result').innerHTML = "Enemy wins!";
+		document.getElementById('match_result').innerHTML = "Sovraznik zmaga!";
 	}
 	else if (draw) {
 		paragraph.style.color = 'dimgray';
-		document.getElementById('match_result').innerHTML = "Draw!";
+		document.getElementById('match_result').innerHTML = "Izenacenje!";
 	}
 }
 
